@@ -45,9 +45,9 @@ EXPOSE 5432
 EXPOSE 8080
 
 # Download Wikipedia and UK post codes
-# RUN curl http://www.nominatim.org/data/wikipedia_article.sql.bin > /app/src/data/wikipedia_article.sql.bin
-# RUN curl http://www.nominatim.org/data/wikipedia_redirect.sql.bin > /app/src/data/wikipedia_redirect.sql.bin
-# RUN curl http://www.nominatim.org/data/gb_postcode_data.sql.gz > /app/src/data/gb_postcode_data.sql.gz
+RUN curl http://www.nominatim.org/data/wikipedia_article.sql.bin > /app/src/data/wikipedia_article.sql.bin
+RUN curl http://www.nominatim.org/data/wikipedia_redirect.sql.bin > /app/src/data/wikipedia_redirect.sql.bin
+RUN curl http://www.nominatim.org/data/gb_postcode_data.sql.gz > /app/src/data/gb_postcode_data.sql.gz
 
 # Nominatim settings
 COPY local.php /app/src/build/settings/local.php
