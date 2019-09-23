@@ -68,7 +68,7 @@
     }
 },
 {
-    "keys" : ["capital"],
+    "keys" : ["capital", "wikipedia", "wikipedia:*"],
     "values" : {
         "" : "extra"
     }

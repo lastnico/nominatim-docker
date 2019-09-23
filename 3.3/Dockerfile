@@ -51,7 +51,8 @@ RUN curl http://www.nominatim.org/data/gb_postcode_data.sql.gz > /app/src/data/g
 
 # Nominatim settings
 COPY local.php /app/src/build/settings/local.php
-COPY import-tracesnt.style /app/src/settings/import-tracesnt.style
+# Useless, as it does not allow keeping some postal codes
+#COPY import-tracesnt.style /app/src/settings/import-tracesnt.style
 
 COPY start.sh /app/start.sh
 COPY startapache.sh /app/startapache.sh

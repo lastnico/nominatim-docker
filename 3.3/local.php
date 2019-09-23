@@ -11,8 +11,8 @@
 @define('CONST_Pyosmium_Binary', '/usr/local/bin/pyosmium-get-changes');
 
 @define('CONST_Osm2pgsql_Flatnode_File', '/data/flatnode.data');
-// @define('CONST_Import_Style', CONST_BasePath.'/settings/import-admin.style');
-@define('CONST_Import_Style', CONST_BasePath . '/settings/import-tracesnt.style');
+
+// @define('CONST_Import_Style', CONST_BasePath.'/settings/import-full.style');
 
 // @define('CONST_Database_DSN', 'pgsql://nominatim:password1234@192.168.1.128:6432/nominatim'); // <driver>://<username>:<password>@<host>:<port>/<database>
 
